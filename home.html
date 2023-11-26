@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Healthcare Website</title>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .navbar-default .navbar-nav > li > a:hover {
+            background-color: rgb(0,139,72);
+            color: rgb(100, 100, 100); 
+        }
+        .navbar-default .navbar-brand:hover {
+            background-color: rgb(0, 161, 83);
+            color: rgb(200, 200, 200); 
+        }
+        .navbar-default {
+            border: hidden;
+            border-radius: 0;
+            background-color: rgb(0, 161, 83);
+            margin-bottom: 0px;
+        }
+        .navbar-default .navbar-nav > .active > a,
+        .navbar-default .navbar-nav > .active > a:hover,
+        .navbar-default .navbar-nav > .active > a:focus {
+            background-color: rgb(0,139,72);
+            color: rgb(210, 210, 210);
+        }
+        .navbar-default .navbar-nav > li > a,
+        .navbar-default .navbar-brand {
+            color: rgb(200, 200, 200);
+        }
+        .no-link-navbar-brand {
+            cursor: default;
+        }
+        h1,h2,h3,h4,h5,h6,p {
+            color: rgb(200, 200, 200);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand">MERC Healthcare</a> <!--change this to whatever u want the brand to be-->
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="home.html">Home</a></li>
+                    <li><a href="">Test</a></li> <!--u can duplicate these to add more pages to the html thing-->
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="login"><a href=""><i class="fa fa-sign-in" style="color: black;"></i> Login</a></li>
+                    <li class="create-account"><a href=""><i class="fa fa-edit" style="color: black;"></i> Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div style="background-color: rgb(0,139,72); width: 100%; height: 20px;"></div>
+    <div style="background: url('banner-image.jpg') no-repeat; background-size: cover; height: 500px; margin-top: 0px;">
+        <br><br>
+        <h1 style="margin-left: 50px;">This is a demo</h1> <!--change the text here-->
+        <br>
+        <h2 style="margin-left: 50px;">So cool</h2> <!--here too-->
+    </div>
+    <div style="background-color: rgb(0,139,72); width: 100%; height: 20px;"></div>
+
+    <div style="background-color: rgb(0, 161, 83); width: 100%; height: 200px;">
+    </div>
+</body>
+</html>
