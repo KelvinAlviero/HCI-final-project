@@ -2,80 +2,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Healthcare Website</title>
+    <title>Home - MERC Healthcare</title>
+    <!--All the CDN links, please do not remove any I had to suffer searching for all of these.-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        .navbar-default .navbar-nav > li > a:hover {
-            background-color: rgb(0,139,72);
-            color: rgb(100, 100, 100); 
+        /*Font style for headings, paragraphs and anchors*/
+        h1,h2,h3,h4,h5,h6,p,a{
+            font-family: 'Comfortaa';
+            font-weight: bold;
         }
-        .navbar-default .navbar-brand:hover {
-            background-color: rgb(0, 161, 83);
-            color: rgb(200, 200, 200); 
-        }
-        .navbar-default {
+        /*General style for the navigation bar*/
+        .navbar-default{
             border: hidden;
             border-radius: 0;
-            background-color: rgb(0, 161, 83);
+            background-color: rgb(155, 229, 170);
             margin-bottom: 0px;
+            font-size: 18px;
         }
-        .navbar-default .navbar-nav > .active > a,
-        .navbar-default .navbar-nav > .active > a:hover,
-        .navbar-default .navbar-nav > .active > a:focus {
-            background-color: rgb(0,139,72);
-            color: rgb(210, 210, 210);
+        /*Style for navigation bar elements with the "active" class*/
+        .navbar-default .navbar-nav > .active > a{
+            background-color: rgb(155, 229, 170);
+            color: rgb(84, 100, 114);
+            text-decoration: underline;
         }
-        .navbar-default .navbar-nav > li > a,
-        .navbar-default .navbar-brand {
-            color: rgb(200, 200, 200);
+        /*Text color for the navigation bar brand and element text*/
+        .navbar-default .navbar-brand,
+        .navbar-default .navbar-brand > a,
+        .navbar-default .navbar-nav > li > a{
+            color: rgb(84, 100, 114);
         }
-        .no-link-navbar-brand {
-            cursor: default;
+        /*Style for navigation bar elements that are being hovered over by the cursor*/
+        .navbar-default .navbar-nav > li > a:hover,
+        .navbar-default .navbar-nav > .active > a:hover{
+            background-color: rgb(155, 229, 170);
+            color: rgb(50, 59, 66); 
         }
-        h1,h2,h3,h4,h5,h6,p {
-            color: rgb(200, 200, 200);
+        /*Style for the drop-down menu when the screen is too small for all the elements to show*/
+        .navbar-default .navbar-toggle{
+            border: 2px solid rgb(84, 100, 114); 
+            color: rgb(50, 59, 66);
+            padding: 5px;
+            width: 35px;
+        }
+        /*Also the style for drop-down menu but when it is hovered over*/
+        .navbar-default .navbar-toggle:hover,
+        .navbar-default .navbar-toggle:focus{
+            background: rgb(106, 187, 141);
+        }
+        /*Style for the seperator things*/
+        .seperator-div{
+            background-color: rgb(156, 237, 191);
+            width: 100%;
+            height: 15px;
         }
     </style>
 </head>
-<body>
+<!--Background color-->
+<body style="background-color: rgb(155, 229, 170);">
+    <!--Navigation bar stuff-->
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
+                <!--Collapse button-->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <i class="fa fa-bars"  style="font-size: 20px; color: rgb(50, 59, 66);"></i>
                 </button>
-                <a class="navbar-brand">MERC Healthcare</a> <!--change this to whatever u want the brand to be-->
+
+                <!--Navigation bar brand-->
+                <a class="navbar-brand">MERC Healthcare</a>
             </div>
+
+            <!--Navigation bar elements-->
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="home.html">Home</a></li>
-                    <li><a href="">Test</a></li> <!--u can duplicate these to add more pages to the html thing-->
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="make-a-plan.html">Make a Plan</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
                 </ul>
-
+                
+                <!--Navigation bar elements but for the right side-->
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="login"><a href=""><i class="fa fa-sign-in" style="color: black;"></i> Login</a></li>
-                    <li class="create-account"><a href=""><i class="fa fa-edit" style="color: black;"></i> Sign Up</a></li>
+                    <li class="login"><a href="login.html"><i class="fa fa-sign-in" style="color: rgb(84, 100, 114);"></i> Login</a></li>
+                    <li class="create-account"><a href="register.html"><i class="fa fa-edit" style="color: rgb(84, 100, 114);"></i> Register</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+    <div class="seperator-div"></div>
 
-    <div style="background-color: rgb(0,139,72); width: 100%; height: 20px;"></div>
-    <div style="background: url('banner-image.jpg') no-repeat; background-size: cover; height: 500px; margin-top: 0px;">
-        <br><br>
-        <h1 style="margin-left: 50px;">This is a demo</h1> <!--change the text here-->
+    <!--Content-->
+    <div style="background-color: rgb(229, 242, 211); padding: 10px;">
+        <h2 style="margin-left: 40px; margin-right: 40px; margin-top: 60px;">Live safer, healthier and happier.</h2>
+        <h3 style="margin-left: 55px; margin-right: 40px;">You'll never miss a heartbeat</h3>
         <br>
-        <h2 style="margin-left: 50px;">So cool</h2> <!--here too-->
+        <p style="margin-left: 40px; margin-right: 40px; font-size: 18px;">
+            Protect your health and wallet with MERC. <br>
+            Discover personalized plans, extensive <br>
+            provider networks, and exceptional service <br>
+            Your peace of mind and body starts here. <br>
+        </p>
+        <p style="margin-left: 40px; margin-right: 40px; margin-top: 10px; margin-bottom: 60px; font-size: 18px;">Interested? Find out more <a href="about-us.html">here</a>.</p>
     </div>
-    <div style="background-color: rgb(0,139,72); width: 100%; height: 20px;"></div>
-
-    <div style="background-color: rgb(0, 161, 83); width: 100%; height: 200px;">
-    </div>
+    <div class="seperator-div"></div>
+    <!--Add additional content under here-->
 </body>
 </html>
