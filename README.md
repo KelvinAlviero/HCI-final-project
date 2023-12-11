@@ -1,2 +1,2 @@
 # HCI-final-project
-#Website livelink: https://kelvinalviero.github.io/HCI-final-project/make-a-plan.html
+## Website livelink: https://kelvinalviero.github.io/HCI-final-project/home.html
