@@ -1,2 +1,3 @@
 # HCI-final-project
-## Website livelink: https://kelvinalviero.github.io/HCI-final-project/home.html
+## This is the PHP version of the main branch.
+## Only add finalized code to this branch 
