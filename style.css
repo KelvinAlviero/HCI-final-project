@@ -1,0 +1,49 @@
+        /*Font style for headings, paragraphs and anchors*/
+        h1,h2,h3,h4,h5,h6,p,a{
+            font-family: 'Comfortaa';
+            font-weight: bold;
+        }
+        /*General style for the navigation bar*/
+        .navbar-default{
+            border: hidden;
+            border-radius: 0;
+            background-color: rgb(155, 229, 170);
+            margin-bottom: 0px;
+            font-size: 18px;
+        }
+        /*Style for navigation bar elements with the "active" class*/
+        .navbar-default .navbar-nav > .active > a{
+            background-color: rgb(155, 229, 170);
+            color: rgb(84, 100, 114);
+            text-decoration: underline;
+        }
+        /*Text color for the navigation bar brand and element text*/
+        .navbar-default .navbar-brand,
+        .navbar-default .navbar-brand > a,
+        .navbar-default .navbar-nav > li > a{
+            color: rgb(84, 100, 114);
+        }
+        /*Style for navigation bar elements that are being hovered over by the cursor*/
+        .navbar-default .navbar-nav > li > a:hover,
+        .navbar-default .navbar-nav > .active > a:hover{
+            background-color: rgb(155, 229, 170);
+            color: rgb(50, 59, 66); 
+        }
+        /*Style for the drop-down menu when the screen is too small for all the elements to show*/
+        .navbar-default .navbar-toggle{
+            border: 2px solid rgb(84, 100, 114); 
+            color: rgb(50, 59, 66);
+            padding: 5px;
+            width: 35px;
+        }
+        /*Also the style for drop-down menu but when it is hovered over*/
+        .navbar-default .navbar-toggle:hover,
+        .navbar-default .navbar-toggle:focus{
+            background: rgb(106, 187, 141);
+        }
+        /*Style for the seperator things*/
+        .seperator-div{
+            background-color: rgb(156, 237, 191);
+            width: 100%;
+            height: 20px;
+        }
