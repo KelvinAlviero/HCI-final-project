@@ -1,0 +1,340 @@
+        /*Font style for headings, paragraphs and anchors*/
+        h1,h2,h3,h4,h5,h6,p,a{
+            font-family: 'Comfortaa';
+            font-weight: bold;
+        }
+        /*General style for the navigation bar*/
+        .navbar-default{
+            border: hidden;
+            border-radius: 0;
+            background-color: rgb(155, 229, 170);
+            margin-bottom: 0px;
+            font-size: 18px;
+        }
+        /*Style for navigation bar elements with the "active" class*/* { margin: 0; padding: 0; } 
+/*Font style for headings, paragraphs and anchors*/
+h1,h2,h3,h4,h5,h6,p,a{
+    font-family: 'Comfortaa';
+    font-weight: bold;
+}
+/*General style for the navigation bar*/
+.navbar-default{
+	padding: 2vh 0;
+    border: hidden;
+    border-radius: 0;
+    background-color: rgb(155, 229, 170);
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+/*Style for navigation bar elements with the "active" class*/
+.navbar-default .navbar-nav > .active > a{
+    background-color: rgb(155, 229, 170);
+    color: rgb(84, 100, 114);
+    text-decoration: underline;
+}
+/*Text color for the navigation bar brand and element text*/
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand > a,
+.navbar-default .navbar-nav > li > a{
+    color: rgb(84, 100, 114);
+}
+/*Style for navigation bar elements that are being hovered over by the cursor*/
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > .active > a:hover{
+    background-color: rgb(155, 229, 170);
+    color: rgb(50, 59, 66); 
+}
+/*Style for the drop-down menu when the screen is too small for all the elements to show*/
+.navbar-default .navbar-toggle{
+    border: 2px solid rgb(84, 100, 114); 
+    color: rgb(50, 59, 66);
+    padding: 5px;
+    width: 35px;
+}
+/*Also the style for drop-down menu but when it is hovered over*/
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus{
+    background: rgb(106, 187, 141);
+}
+/*Style for the seperator things*/
+.seperator-div{
+    background-color: rgb(156, 237, 191);
+    width: 100%;
+    height: 8px;
+}
+/*Home page CSS*/
+.main-grid1{ grid-area: text;}
+.main-grid2{ grid-area: image;}
+
+.main-grid{
+	display: grid;
+	grid-template-areas:
+		'text image';
+	gap: 0;
+	background-color: rgb(229, 242, 211);
+	padding: 0;
+}
+
+.main-grid > div{
+	background-color: #fcfaf6;
+	padding: 8vh 4vw;
+	width:100%;
+}
+
+
+.go-to-plan-button {
+	margin:0 40px 0 40px; 
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #04d9ff;
+	color: #fff;
+	text-decoration: none;
+	border: none;
+	border-radius:20px; 
+	font-size: clamp(12px, 1.2vw, 28px); 
+	cursor: pointer;
+}
+
+
+.info-container{
+    background-color: 	#fefefa;
+	border-radius: inherit;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);  
+    display: flex;
+    justify-content:center;
+	align-items: center;
+	padding: 40px 0px;
+}
+
+.info-container img{
+	margin:0 20px;
+}
+
+.main-title{
+    display:grid;
+    justify-content:center;
+}
+
+
+.green-border{
+	background-color: #c5eeb1 ; 
+	border-radius: 40px; 
+	padding: 0.7vh 0.7vh; 
+	margin: 80px 60px; 
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*End of home page*/
+
+/*Make a plan page CSS*/
+.body-one-container{
+    width:100%;
+    height:65vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent), url('forest.jpg');
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: 40% 45%;
+    overflow: hidden;
+}
+.body-one-container-text{
+    justify-content: space-between;
+    display: flex;
+    margin: 10vh 14vw;
+}
+.body-one-container h1{
+    color: white;
+}
+.login-box{
+    color: rgb(50, 59, 66);
+    width: 10vw;
+    height:8vh;
+    font-size: 1.5vw;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 15vh 16vw;
+    border-radius: 10px;
+    background-color: #CAE384;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
+}
+.login-box a{
+    text-decoration: none;
+    color: inherit;
+    display:flex;
+    align-items: center;
+    margin:0 1vw;
+}
+/*Product title */
+.product-title{
+    display: flex;
+    height:auto;
+    box-sizing: border-box;
+    padding: 0vh 12vw;
+    background-color: #9EE19F;
+}
+.product-title-icon{
+    font-size: 3vw;
+    display: flex;
+    align-items:center;
+}
+.product-title-text{
+    margin: 0 1vw;
+    align-items: center;
+    display:grid;
+}
+.product-title h2{
+    font-size: 2.5vw;
+}
+.product-title p{
+
+    }
+/*End product title*/
+.body-two-container{
+    background-color: #C5EEB1;
+}
+/*The product boxes*/
+.health-insurance-product{
+    background-color: #E5F2D3;
+    width: 20vw;
+    height:50vh;
+    border-radius: 60px;
+    margin: 5vh 4vw;
+    display: flex;
+    justify-content:center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s;
+}
+.about-us-box{
+    background-color: #E5F2D3;
+    width: 20vw;
+    height:50vh;
+    border-radius: 60px;
+    margin: 5vh 4vw;
+    display: flex;
+    justify-content:center;
+}
+.health-insurance-product:hover {
+    transform: scale(1.1);
+}
+.accident-insurance-product{
+    background-color: #E5F2D3;
+    width: 20vw;
+    height:50vh;
+    border-radius: 40px;
+    margin: 5vh 4vw;
+    display: flex;
+    justify-content:center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
+}
+.group-insurance-product{
+    background-color: #E5F2D3;
+    width: 20vw;
+    height:50vh;
+    border-radius: 40px;
+    margin: 5vh 4vw;
+    display: flex;
+    justify-content:center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
+}
+.product-container{
+display:flex;
+justify-content: center;
+}
+.product-option{
+box-sizing: border-box;
+justify-content: center;
+}
+
+/*Contact us page CSS*/
+
+.contact-numbers{
+	display: flex; 
+	justify-content: space-between; 
+	padding: 10px 10px;
+}
+
+.contact-numbers h3{
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.contact-number-margin{
+	margin: 0 80px;
+}
+
+.contact-number-margin a{
+	color: #0B0080;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.other-contact-selection{
+	display:grid;
+	justify-content:center;
+}
+
+.contact-select {
+    padding: 10px;
+	margin:0px 10px 60px 10px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+  }
+
+  /* Styling the dropdown arrow */
+.contact-select::-ms-expand {
+    display: none;
+  }
+
+.contact-select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #888;
+  }
+
+  /* Styling the selected option */
+.contact-select option:checked {
+    background-color: #e9e9e9;
+  }
+        .navbar-default .navbar-nav > .active > a{
+            background-color: rgb(155, 229, 170);
+            color: rgb(84, 100, 114);
+            text-decoration: underline;
+        }
+        /*Text color for the navigation bar brand and element text*/
+        .navbar-default .navbar-brand,
+        .navbar-default .navbar-brand > a,
+        .navbar-default .navbar-nav > li > a{
+            color: rgb(84, 100, 114);
+        }
+        /*Style for navigation bar elements that are being hovered over by the cursor*/
+        .navbar-default .navbar-nav > li > a:hover,
+        .navbar-default .navbar-nav > .active > a:hover{
+            background-color: rgb(155, 229, 170);
+            color: rgb(50, 59, 66); 
+        }
+        /*Style for the drop-down menu when the screen is too small for all the elements to show*/
+        .navbar-default .navbar-toggle{
+            border: 2px solid rgb(84, 100, 114); 
+            color: rgb(50, 59, 66);
+            padding: 5px;
+            width: 35px;
+        }
+        /*Also the style for drop-down menu but when it is hovered over*/
+        .navbar-default .navbar-toggle:hover,
+        .navbar-default .navbar-toggle:focus{
+            background: rgb(106, 187, 141);
+        }
+        /*Style for the seperator things*/
+        .seperator-div{
+            background-color: rgb(156, 237, 191);
+            width: 100%;
+            height: 20px;
+        }

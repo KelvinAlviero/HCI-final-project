@@ -20,7 +20,7 @@
     <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <!--Background color-->
 <body style="background-color: rgb(155, 229, 170);">
@@ -63,6 +63,47 @@
         </div>
     </nav>
     <div class="seperator-div"></div>
-    <!--Add additional content under here-->
+    <div>
+		<div class="body-one-container">
+			<div class="body-one-container-text">
+				<h1>Discover our enticing new insurance plans for this year and secure your peace of mind.</h1>
+			</div>
+			<div class="login-box">
+				<button style="padding: 0; border: none; background: none; ">
+					<a href="login.html"><i class="glyphicon glyphicon-share-alt" style="margin: 0.5vw;"></i>Login</a>
+				</button>
+			</div>
+		</div>
+		<div class="body-two-container">
+			<div class="product-title">
+				<div class="product-title-icon">
+					<i class="fa fa-heartbeat"></i>
+				</div>
+				<div class="product-title-text">
+					<h2>Design your plans</h2>
+					<p>Description</p>
+				</div>
+			</div>
+			<div class="product-container">
+				<div class="health-insurance-product">
+					<div class="product-option">
+						<h3>Product 1</h3>
+						<p>Description</p>			
+					</div>
+				</div>
+				<div class="health-insurance-product">
+					<div class="product-option">
+						<h3>Product 2</h3>
+						<p>Description</p>			
+					</div>
+				</div>
+				<div class="health-insurance-product">
+					<div class="product-option">
+						<h3>Product 3</h3>
+						<p>Description</p>			
+					</div>
+				</div>
+			</div>
+		</div>
 </body>
 </html>

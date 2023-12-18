@@ -20,7 +20,7 @@
     <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <!--Background color-->
 <body style="background-color: rgb(155, 229, 170);">
@@ -79,5 +79,65 @@
     </div>
     <div class="seperator-div"></div>
     <!--Add additional content under here-->
+			<div class="main-title">
+				<div style="display:flex; justify-content:center; margin-top: 3vh;">
+					<div style="height:0.5vh; width:6vw; background-color:red; "></div>
+				</div>
+				<h1 style="font-size: clamp(28px, 2.5vw, 56px);">Providing the best for you</h1>
+				<p style="justify-content: center; display:flex; margin: 2vh 0; ">Benefits for you as a member:</p>
+			</div>
+	<div class="green-border">
+		<div class="info-container">
+				<div>
+					<img src="kelvindoc.png" style="border-radius: 50%;   margin: 0 4vw; ">
+				</div>
+				<div class="intro-text">
+					<i class="fas fa-user-md" style="margin: 0 0 10px 16px; font-size: 42px;"></i>
+					<div style="width:70px; height:3px; background-color: green;"></div>
+					<h3>Introducing our Chief Medical Officer (CMO) Dr. Vince Kel</h3>
+					<p>Dr. Vince Kel, MD, PhD, is our esteemed Chief Medical Officer (CMO). <br>
+					With a strong commitment to patient care, research, and leadership,<br>
+					Dr. Kellan ensures the highest standard of healthcare.<br>
+					His exceptional clinical excellence, research contributions, <br>
+					and strategic vision drive the advancement of our medical services.<br>
+					With a deep understanding of evidence-based practices,<br>
+					Dr. Kel leads our team in delivering exceptional<br>
+					care and optimizing patient outcomes.
+					</p>
+					<div style="width:150px; height:3px; background-color: green; "></div>
+				</div>
+		</div>
+	</div>
+	<div class="green-border">
+		<div class="info-container">
+					<div style="position: relative;">
+					  <i class="fas fa-user-friends" style="position: absolute; top: -50; right: 26; font-size: 42px;"></i>
+					  <div style="width:100px; height:3px; background-color: green; float: right;"></div>
+					  <h3>A reliable team always on your side</h3>
+					  <p>A team that is always standb-by and trained to best support you<br>
+					  A team that is always standb-by and trained to best support you
+					  </p>
+					  <div style="width:100px; height:3px; background-color: green; float: right;"></div>
+					</div>
+				<div style="width:25%; object-fit: cover; aspect-ratio: 1/1;">
+					<img src="team.jpg" style="border-radius: 50%;  margin: 0 4vw; max-width:100%; max-height:100%; aspect-ratio: 1/1; ">
+				</div>
+		</div>
+	</div>
+	<div class="green-border">
+		<div class="info-container">
+				<div>
+					<img src="kelvindoc.png" style="border-radius: 50%;   margin: 0 4vw; ">
+				</div>
+				<div class="intro-text">
+					<i class="fas fa-user-md" style="margin: 0 0 10px 16px; font-size: 42px; "></i>
+					<div style="width:100px; height:3px; background-color: green;"></div>
+					<h3>A reliable team always on your side</h3>
+					<p>
+					</p>
+					<div style="width:100px; height:3px; background-color: green;"></div>
+				</div>
+		</div>
+	</div>
 </body>
 </html>

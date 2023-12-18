@@ -20,7 +20,7 @@
     <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <!--Background color-->
 <body style="background-color: rgb(155, 229, 170);">
@@ -62,6 +62,20 @@
         </div>
     </nav>
     <div class="seperator-div"></div>
-    <!--Add additional content under here-->
+    <div style="background-color:  #C5EEB1; padding-top: 20px;">
+        <div class="green-border">
+            <div class="info-container">
+                <div>
+                    <img src="MERC healthcare.png" style= "margin: 0 4vw; ">
+                </div>
+                <div class="intro-text">
+                    <p>We here at MERC Healthcare provide the best Healthcare for all it's clients. With open communcation to our staff,<br>
+                    you'll never fall behind on the latest updates on health services. Since 1987, we've continued to perfect our site<br>
+                    by rigourous testing and now were here. We also offer health insurance so you'll never have to worry about the hospital<br>
+                    bill at the end of the day</p>
+                </div>
+        </div>
+    </div>
+    <div class="seperator-div"></div>
 </body>
 </html>
