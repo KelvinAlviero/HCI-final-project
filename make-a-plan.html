@@ -25,7 +25,7 @@
                 </button>
 
                 <!--Navigation bar brand-->
-                <a class="navbar-brand">MERC Healthcare</a>
+                <a href="home.html" class="navbar-brand"><div class="logo"><img src="MERC healthcare.png"></div></a>
             </div>
 
             <!--Navigation bar elements-->
@@ -70,6 +70,7 @@
 				</div>
 			</div>
 			<div class="product-container">
+				<div class="one">
 			<a href="#" id="popup-link-health" style="text-decoration:none; color:inherit; font-weight: normal;">
 				<div class="health-insurance-product">
 					<div class="product-option">
@@ -87,16 +88,19 @@
 						</ul>
 					</div>
 				</div>
+				</div>
 			</a>
+				<div class="two">
 			<a href="#" id="popup-link-accident" style="text-decoration:none; color:inherit; font-weight: normal;">
 				<div class="health-insurance-product">
 					<div class="product-option">
 						<i class="fas fa-car-crash" style="color:#FDB813;"></i>
-						<h3>Accident-related<br> Insurance</h3>
+						<h3 style="font-size: clamp(12px,1.234vw,18.72px);">Accident-related<br> Insurance</h3>
 						<p>Accident-related insurance provides<br>
-						financial protection for 
-						accidental injuries,<br> covering a wide range of expenses and <br>  safeguarding individuals
-						from potential <br> financial burdens.<br>
+						financial protection for accidental injuries,<br>
+						covering a wide range of expenses and<br>
+						safeguarding individuals from potential <br>
+						financial burdens.<br>
 						Accident-related insurance covers:</p>	
 						<ul class="health-list">
 							<li>Medical expenses for <br>accidental injuries</li>
@@ -107,12 +111,14 @@
 						</ul>						
 					</div>
 				</div>
+				</div>
 			</a>
+				<div class="three">
 			<a href="#" id="popup-link-group" style="text-decoration:none; color:inherit; font-weight: normal;">
 				<div class="health-insurance-product">
 					<div class="product-option">
 						<i class="fas fa-users" style="color:#77c3ec;"></i>
-						<h3>Group Insurance</h3><br>
+						<h3 style="font-size: clamp(12px,1.234vw,18.72px);">Group Insurance</h3><br>
 						<p>Group insurance provides financial <br> protection for
 						a group of individuals.<br> It offers members security and access <br>to necessary insurance coverage <br>within a group context.</p>		
 						<ul class="health-list">
@@ -124,6 +130,7 @@
 							<li>Long-term care services</li>
 						</ul>	
 					</div>
+				</div>
 				</div>
 			</a>
 			</div>
@@ -257,6 +264,7 @@
 		popupWindowHealth.style.display = "none";
 		popupWindowAccident.style.display = "none";
 		popupWindowGroup.style.display = "none";
+		document.getElementById("message").style.display = "none";
 	});
 }
   

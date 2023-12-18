@@ -49,6 +49,21 @@ h1,h2,h3,h4,h5,h6,p,a{
     width: 100%;
     height: 8px;
 }
+
+.logo{
+	position: relative;
+	width: 100px;
+	height:	50px;
+	top: -14px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.logo img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
 /*Home page CSS*/
 .main-grid1{ grid-area: text;}
 .main-grid2{ grid-area: image;}
@@ -91,6 +106,7 @@ h1,h2,h3,h4,h5,h6,p,a{
     justify-content:center;
 	align-items: center;
 	padding: 40px 0px;
+	
 }
 
 .info-container img{
@@ -193,26 +209,6 @@ h1,h2,h3,h4,h5,h6,p,a{
 }
 .health-insurance-product:hover {
     transform: scale(1.2);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 .product-container{
@@ -228,22 +224,23 @@ h1,h2,h3,h4,h5,h6,p,a{
 .product-option h3{
 	display:flex;
 	justify-content: center;
+	font-size: clamp(12px,1.234vw,18.72px);
 }
 
 .product-option p{
 	display:flex;
 	justify-content: center;
 	font-weight: normal;
-	text-align: justify;
-	 hyphens: auto;
+	font-size: clamp(8px,1.055vw,16px);
 }
 
 .product-option i{
 	display:flex;
 	justify-content: center;
-	font-size:42px;
+	font-size:clamp(24px, 2.77vw, 42px);
 	margin: 20px 0;
 }
+
 .health-list{
 	margin-left: 20px;
 }
@@ -252,6 +249,7 @@ h1,h2,h3,h4,h5,h6,p,a{
 	list-style-type: disc;
 	margin-bottom: 5px;
     font-family: 'Comfortaa';
+	font-size: clamp(8px,1.055vw,16px);
 }
 
 .popup-window {
@@ -352,3 +350,108 @@ h1,h2,h3,h4,h5,h6,p,a{
 .contact-select option:checked {
     background-color: #e9e9e9;
   }
+  
+  
+  
+/* Media query for small screens */
+@media only screen and (max-width: 991px) {
+	
+	.body-one-container{
+    width:100%;
+    height:80vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent), url('forest2.avif');
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50% 50% ;
+    overflow: hidden;
+	}
+	
+	
+	.login-box{
+    color: rgb(50, 59, 66);
+    font-size: 2vw;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    margin:2vh 14vw;
+    border-radius: 10px;
+    background-color: #CAE384;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
+	}
+	
+	.login-box a{
+		text-decoration: none;
+		color: inherit;
+		display:flex;
+		align-items: center;
+		margin:0 1vw;
+	}
+	
+	
+	.small-screen-product-grid1{grid-area: one;}
+	.small-screen-product-grid2{grid-area: two;}
+	.small-screen-product-grid3{grid-area: three;}
+	
+	.product-container{
+    background-color:  	#e5e5e5;
+	display: grid;
+	grid-template-areas:
+			'one'
+			'two'
+			'three';
+	gap: 10px;
+	padding: 10px;
+	}
+	
+	.health-insurance-product{
+    background-color: #E5F2D3;
+    border-radius: 60px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s;
+	}
+
+	.product-option{
+	box-sizing: content-box;
+	justify-content: center;
+	}
+
+	.product-option h3{
+		display:flex;
+		justify-content: center;
+		font-size: clamp(16px,6.796vw,28px);
+	}
+
+	.product-option p{
+		display:flex;
+		justify-content: center;
+		font-weight: normal;
+		font-size: clamp(12px,1.942vw,20px);
+	}
+
+	.product-option i{
+		display:flex;
+		justify-content: center;
+		font-size:clamp(12px,1.942vw,20px);
+		margin: 20px 0;
+	}
+
+	.popup-grid{
+	display: grid;
+	grid-template-areas:
+		'name'
+		'year'
+		'number'
+		'email'
+		'messages';
+	gap: 10;
+	font-size: 12px;
+	background-color: rgb(229, 242, 211);
+	justify-content: space-between;
+	padding: 20px 100px;
+	overflow: hidden;
+	}
+
+
+
+}
