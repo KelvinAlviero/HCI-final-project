@@ -62,33 +62,216 @@
 		<div class="body-two-container">
 			<div class="product-title">
 				<div class="product-title-icon">
-					<i class="fas fa-heartbeat"></i>
+					<i class="fas fa-heartbeat"style="color:  #fa2a55;"></i>
 				</div>
 				<div class="product-title-text">
 					<h2>Design your plans</h2>
-					<p>Description</p>
+					<p>Choose your plan</p>
 				</div>
 			</div>
 			<div class="product-container">
+			<a href="#" id="popup-link-health" style="text-decoration:none; color:inherit; font-weight: normal;">
 				<div class="health-insurance-product">
 					<div class="product-option">
-						<h3>Product 1</h3>
-						<p>Description</p>			
+						<i class="fas fa-medkit" style="color:#EB102F;"></i>
+						<h3>Health Insurance</h3><br>
+						<p>Health insurance provides coverage <br>for various medical needs,<br>
+						including:<br></p>	
+						<ul class="health-list">
+							<li>Doctor visits</li>
+							<li>Hospitalization</li>
+							<li>Surgeries</li>
+							<li>Prescription medications</li>
+							<li>Preventive services</li>
+							<li>Diagnostic tests</li>
+						</ul>
 					</div>
 				</div>
+			</a>
+			<a href="#" id="popup-link-accident" style="text-decoration:none; color:inherit; font-weight: normal;">
 				<div class="health-insurance-product">
 					<div class="product-option">
-						<h3>Product 2</h3>
-						<p>Description</p>			
+						<i class="fas fa-car-crash" style="color:#FDB813;"></i>
+						<h3>Accident-related<br> Insurance</h3>
+						<p>Accident-related insurance provides<br>
+						financial protection for 
+						accidental injuries,<br> covering a wide range of expenses and <br>  safeguarding individuals
+						from potential <br> financial burdens.<br>
+						Accident-related insurance covers:</p>	
+						<ul class="health-list">
+							<li>Medical expenses for <br>accidental injuries</li>
+							<li>Emergency care costs</li>
+							<li>Disability benefits for lost income<br> due to accident-related disability</li>
+							<li>Accidental Death and Dismemberment <br> (AD&D) coverage</li>
+							<li>Rehabilitation services</li>
+						</ul>						
 					</div>
 				</div>
+			</a>
+			<a href="#" id="popup-link-group" style="text-decoration:none; color:inherit; font-weight: normal;">
 				<div class="health-insurance-product">
 					<div class="product-option">
-						<h3>Product 3</h3>
-						<p>Description</p>			
+						<i class="fas fa-users" style="color:#77c3ec;"></i>
+						<h3>Group Insurance</h3><br>
+						<p>Group insurance provides financial <br> protection for
+						a group of individuals.<br> It offers members security and access <br>to necessary insurance coverage <br>within a group context.</p>		
+						<ul class="health-list">
+							<li>Health expenses</li>
+							<li>Life benefits</li>
+							<li>Disability coverage</li>
+							<li>Dental and vision care</li>
+							<li>Accidental death and dismemberment</li>
+							<li>Long-term care services</li>
+						</ul>	
 					</div>
 				</div>
+			</a>
 			</div>
 		</div>
+	<div id="popup-window-Health" class="popup-window">
+		<button class="close-button" style="float: right; margin: 0 5px 0 0; background-color: transparent; border:none; font-size:24px;"><i class="fas fa-times"></i></button>
+			<div style="background-color: rgb(155, 229, 170); margin:0; padding: 10px 0">
+				<h1>Health Insurance request</h1>
+			</div>
+		<div class="popup-grid">
+			<div class="popup-grid1">
+				<label for="nameInput">Full name:</label><br>
+				<input id="nameInput">
+			</div>
+			<div class="popup-grid2">
+				<label for="emailInput">Email:</label><br>
+				<input id="emailInput">
+			</div>
+			<div class="popup-grid3">
+				<label for="phoneInput">Phone number:</label><br>
+				<input id="phoneInput">
+			</div>
+			<div class="popup-grid4">
+				<label for="dateInput">Date of Birth:</label><br>
+				<input type="date" id="dateInput" name="dateInput">
+			</div>
+			<div class="popup-grid6">
+				<label for="msgInput">Message:</label><br>
+				<input id="msgInput">
+			</div>
+
+			<button id="submitBtn" onclick="submitForm()">Submit</button>
+			<div id="message" style="display: none;">Your form has been recorded.</div>
+		</div>
+	</div>
+	
+	<div id="popup-window-Accident" class="popup-window">
+		<button class="close-button" style="float: right; margin: 0 5px 0 0; background-color: transparent; border:none; font-size:24px;"><i class="fas fa-times"></i></button>
+			<div style="background-color: rgb(155, 229, 170); margin:0; padding: 10px 0">
+				<h1>Accident-related Insurance request</h1>
+			</div>
+		<div class="popup-grid">
+			<div class="popup-grid1">
+				<label for="nameInput">Full name:</label><br>
+				<input id="nameInput">
+			</div>
+			<div class="popup-grid2">
+				<label for="emailInput">Email:</label><br>
+				<input id="emailInput">
+			</div>
+			<div class="popup-grid3">
+				<label for="phoneInput">Phone Number:</label><br>
+				<input id="phoneInput">
+			</div>
+			<div class="popup-grid4">
+				<label for="dateInput">Date of Birth:</label><br>
+				<input type="date" id="dateInput" name="dateInput">
+			</div>
+			<div class="popup-grid6">
+				<label for="msgInput">Message:</label><br>
+				<input id="msgInput">
+			</div>
+
+			<button id="submitBtn" onclick="submitForm()">Submit</button>
+			<div id="message" style="display: none;">Your form has been recorded.</div>
+		</div>
+	</div>
+
+	<div id="popup-window-Group" class="popup-window">
+		<button class="close-button" style="float: right; margin: 0 5px 0 0; background-color: transparent; border:none; font-size:24px;"><i class="fas fa-times"></i></button>
+			<div style="background-color: rgb(155, 229, 170); margin:0; padding: 10px 0">
+				<h1>Group insurance request</h1>
+			</div>
+		<div class="popup-grid">
+			<div class="popup-grid1">
+				<label for="nameInput">Company name:</label><br>
+				<input id="nameInput">
+			</div>
+			<div class="popup-grid2">
+				<label for="emailInput">Email:</label><br>
+				<input id="emailInput">
+			</div>
+			<div class="popup-grid3">
+				<label for="phoneInput">Phone number:</label><br>
+				<input id="phoneInput">
+			</div>
+			<div class="popup-grid4">
+				<label for="dateInput">Number of people:</label><br>
+				<input id="dateInput">
+			</div>
+			<div class="popup-grid6">
+				<label for="msgInput">Message:</label><br>
+				<input id="msgInput">
+			</div>
+
+			<button id="submitBtn" onclick="submitForm()">Submit</button>
+			<div id="message" style="display: none;">Your form has been recorded.</div>
+		</div>
+	</div>
+
+
 </body>
+
+<script>
+  // Get the elements by their ID
+	var popupLinkHealth = document.getElementById("popup-link-health");
+	var popupLinkAccident= document.getElementById("popup-link-accident");
+	var popupLinkGroup = document.getElementById("popup-link-group");
+	var popupWindowHealth = document.getElementById("popup-window-Health");
+	var popupWindowAccident = document.getElementById("popup-window-Accident");
+	var popupWindowGroup = document.getElementById("popup-window-Group");
+	var closeButtons = document.getElementsByClassName("close-button");
+  // Show the pop-up window when the link is clicked
+	popupLinkHealth.addEventListener("click", function(event) {
+		event.preventDefault();
+		popupWindowHealth.style.display = "block";
+	});
+  
+	popupLinkAccident.addEventListener("click", function(event) {
+		event.preventDefault();
+		popupWindowAccident.style.display = "block";
+	});
+	
+	popupLinkGroup.addEventListener("click", function(event) {
+		event.preventDefault();
+		popupWindowGroup.style.display = "block";
+	});
+  // Hide the pop-up window when the close button is clicked
+	for (var i = 0; i < closeButtons.length; i++) {
+	  closeButtons[i].addEventListener("click", function() {
+		popupWindowHealth.style.display = "none";
+		popupWindowAccident.style.display = "none";
+		popupWindowGroup.style.display = "none";
+	});
+}
+  
+function submitForm() {
+  // Show the "form submitted" message
+  document.getElementById("message").style.display = "block";
+
+  // Reset the form
+  document.getElementById("nameInput").value = "";
+  document.getElementById("emailInput").value = "";
+  document.getElementById("phoneInput").value = "";
+  document.getElementById("dateInput").value = "";
+  document.getElementById("msgInput").value="";
+  document.getElementById("insrcInput").selectedIndex= 0;
+}
+</script> 
+
 </html>
