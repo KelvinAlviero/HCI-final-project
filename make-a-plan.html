@@ -230,12 +230,41 @@
 			<div id="message" style="display: none;">Your form has been recorded.</div>
 		</div>
 	</div>
+	
+	<div class="seperator-div"></div>
+	
+	<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>Our company </h3>
+      <p>Health and wellness always comes first</p>
+    </div>
 
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p>Email: MERChealth@email.com</p>
+      <p>Phone: 4571-2541</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Follow Us</h3>
+      <ul class="social-media">
+        <li><a href="https://www.instagram.com/harryc_u/?igshid=MzRlODBiNWFlZA%3D%3D"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com/harryc_u/?igshid=MzRlODBiNWFlZA%3D%3D"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/harryc_u/?igshid=MzRlODBiNWFlZA%3D%3D"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2023 MERC healtcare. All rights reserved.</p>
+  </div>
+</footer>
 
 </body>
 
 <script>
-  // Get the elements by their ID
+  // Get the elements by ID
 	var popupLinkHealth = document.getElementById("popup-link-health");
 	var popupLinkAccident= document.getElementById("popup-link-accident");
 	var popupLinkGroup = document.getElementById("popup-link-group");
@@ -243,7 +272,7 @@
 	var popupWindowAccident = document.getElementById("popup-window-Accident");
 	var popupWindowGroup = document.getElementById("popup-window-Group");
 	var closeButtons = document.getElementsByClassName("close-button");
-  // Show the pop-up window when the link is clicked
+  // Show pop-up window when the link is clicked
 	popupLinkHealth.addEventListener("click", function(event) {
 		event.preventDefault();
 		popupWindowHealth.style.display = "block";
@@ -258,7 +287,7 @@
 		event.preventDefault();
 		popupWindowGroup.style.display = "block";
 	});
-  // Hide the pop-up window when the close button is clicked
+  // Hide pop-up window when the close button is clicked
 	for (var i = 0; i < closeButtons.length; i++) {
 	  closeButtons[i].addEventListener("click", function() {
 		popupWindowHealth.style.display = "none";
@@ -269,10 +298,9 @@
 }
   
 function submitForm() {
-  // Show the "form submitted" message
-  document.getElementById("message").style.display = "block";
 
-  // Reset the form
+  document.getElementById("message").style.display = "block";
+  
   document.getElementById("nameInput").value = "";
   document.getElementById("emailInput").value = "";
   document.getElementById("phoneInput").value = "";
