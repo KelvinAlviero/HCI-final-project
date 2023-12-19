@@ -289,6 +289,9 @@ h1,h2,h3,h4,h5,h6,p,a{
 	z-index: 10;
 	display: none;
 } 
+.text-box{
+    display: flex
+}
 
 .popup-grid1{grid-area: name;}
 .popup-grid2{grid-area: email;}
