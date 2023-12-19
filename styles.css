@@ -83,6 +83,24 @@ h1,h2,h3,h4,h5,h6,p,a{
 	width:100%;
 }
 
+.main-grid1 h2{
+	margin-left: 40px; 
+	margin-right: 40px; 
+	margin-top: 60px; 
+	font-size: clamp(28px, 3.3vw, 60px); 
+}
+
+.main-grid1 h3{
+	margin-left: 55px; 
+	margin-right: 40px; 
+	font-size: clamp(20px, 2.2vw, 48px);
+}
+
+.main-grid1 p{
+	margin-left: 40px; 
+	margin-right: 40px; 
+	font-size: clamp(12px, 1.2vw, 28px);
+}
 
 .go-to-plan-button {
 	margin:0 40px 0 40px; 
@@ -111,6 +129,8 @@ h1,h2,h3,h4,h5,h6,p,a{
 
 .info-container img{
 	margin:0 20px;
+	max-width:100%;
+	max-height:100%;
 }
 
 .main-title{
@@ -147,7 +167,9 @@ h1,h2,h3,h4,h5,h6,p,a{
 }
 .body-one-container h1{
     color: white;
+	font-size: clamp(28px,3.125vw,36px);
 }
+
 .login-box{
     color: rgb(50, 59, 66);
     width: 10vw;
@@ -255,16 +277,15 @@ h1,h2,h3,h4,h5,h6,p,a{
 .popup-window {
 	position: fixed;
 	width: 70%;
-	height:70%;
+	height:auto;
 	border-radius: 10px;
 	background: rgb(229, 242, 211);
 	border: 1px solid black;
 	padding: 0px;
 	margin: auto;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	z-index: 10;
 	display: none;
 } 
@@ -356,9 +377,50 @@ h1,h2,h3,h4,h5,h6,p,a{
 /* Media query for small screens */
 @media only screen and (max-width: 991px) {
 	
+	.main-grid1 h2{
+		margin-left: 40px; 
+		margin-right: 40px; 
+		margin-top: 60px; 
+		font-size: clamp(20px, 3.3vw, 28px); 
+	}
+
+	.main-grid1 h3{
+		margin-left: 55px; 
+		margin-right: 40px; 
+		font-size: clamp(12px, 2.2vw, 20px);
+	}
+
+	.main-grid1 p{
+		margin-left: 40px; 
+		margin-right: 40px; 
+		font-size: clamp(8px, 2.2vw, 12px);
+	}
+	
+	.main-grid2{
+		width:50%;
+		height:auto;
+	}
+	
+	.main-grid2 img{
+		max-height:100%;
+		max-width:100%;
+	}
+	
+	.responsive-image{
+		display: none;
+	}
+	
+	.info-container h3{
+		font-size: clamp(16px, 3.0vw, 24px);
+	}
+	
+	.info-container p{
+		font-size: clamp(12px, 3.0vw, 20px);
+	}
+	
 	.body-one-container{
     width:100%;
-    height:80vh;
+    height:70vh;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent), url('forest2.avif');
     background-attachment: scroll;
     background-repeat: no-repeat;
@@ -374,7 +436,7 @@ h1,h2,h3,h4,h5,h6,p,a{
     display:flex;
     justify-content:space-between;
     align-items: center;
-    margin:2vh 14vw;
+    margin:0vh 14vw;
     border-radius: 10px;
     background-color: #CAE384;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
@@ -453,5 +515,24 @@ h1,h2,h3,h4,h5,h6,p,a{
 	}
 
 
+	.body-one-container h1{
+    color: white;
+	font-size: clamp(20px,6.796vw,28px);
+	}
 
+
+}
+
+@media only screen and (min-height: 1150px){
+	.body-one-container{
+		width:100%;
+		height:60vh;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent), url('forest.jpg');
+		background-attachment: scroll;
+		background-repeat: no-repeat;
+		background-size: 130%;
+		background-position: 50% 50%;
+		overflow: hidden;
+	}
+	
 }
